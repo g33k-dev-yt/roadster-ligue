@@ -1,0 +1,58 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Roadster Ligue",
+  "version": "1.1.0",
+  "identifier": "io.g33k.roadster-ligue",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:5173",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "withGlobalTauri": false,
+    "windows": [
+      {
+        "label": "main",
+        "title": "Roadster Ligue \u2014 By-G33K",
+        "width": 1440,
+        "height": 900,
+        "minWidth": 800,
+        "minHeight": 550,
+        "center": true,
+        "resizable": true,
+        "backgroundColor": "#101611"
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; script-src 'self' 'wasm-unsafe-eval' blob:; worker-src 'self' blob:; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self' ipc: http://ipc.localhost https://ipc.localhost; media-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'none'",
+      "capabilities": [
+        "main-window"
+      ]
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "publisher": "By-G33K",
+    "category": "Game",
+    "copyright": "2026 By-G33K. Third-party assets retain their licenses.",
+    "shortDescription": "Satirical roadster football \u2014 local AI, rocket boost and aerial play.",
+    "longDescription": "Roadster Ligue \u2014 By-G33K. An independent satirical fan-made car-football prototype with community Tesla Roadster 2026 models. Local AI matches and free play; not affiliated with Tesla, Psyonix or Epic Games. Contains a photosensitivity warning before graphics initialize.",
+    "license": "MIT",
+    "licenseFile": "../LICENSE",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "resources": {
+      "../public/licenses/": "licenses/",
+      "../public/ASSET_SOURCES.md": "ASSET_SOURCES.md",
+      "../SAFETY.md": "SAFETY.md",
+      "NATIVE_DEPENDENCY_NOTICES.txt": "NATIVE_DEPENDENCY_NOTICES.txt"
+    }
+  }
+}

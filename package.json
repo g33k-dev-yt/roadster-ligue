@@ -1,0 +1,38 @@
+{
+  "name": "roadster-ligue",
+  "version": "1.1.0",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node tests/run-browser.mjs",
+    "standalone": "npm run build && node make-standalone.mjs",
+    "test:offline": "node tests/offline-check.mjs Roadster-Ligue.html",
+    "test:subpath": "node tests/subpath-check.mjs",
+    "tauri": "tauri",
+    "desktop:dev": "tauri dev",
+    "desktop:build": "tauri build",
+    "desktop:check": "cargo check --manifest-path src-tauri/Cargo.toml --locked",
+    "check:release": "npm run build && npm test && npm run test:subpath && npm run standalone && npm run test:offline"
+  },
+  "license": "MIT",
+  "description": "Roadster Ligue \u2014 By-G33K. Satirical 3D Tesla Roadster 2026 football, browser and Tauri.",
+  "dependencies": {
+    "@tauri-apps/plugin-opener": "^2.7.2",
+    "cannon-es": "0.20.0",
+    "three": "0.179.1"
+  },
+  "devDependencies": {
+    "@gltf-transform/core": "4.2.1",
+    "@gltf-transform/extensions": "4.2.1",
+    "@gltf-transform/functions": "4.2.1",
+    "@playwright/test": "^1.64.1",
+    "@tauri-apps/cli": "2.12.4",
+    "draco3dgltf": "1.5.7",
+    "meshoptimizer": "0.22.0",
+    "sharp": "^0.35.5",
+    "vite": "^6.4.5"
+  },
+  "type": "module",
+  "author": "By-G33K"
+}

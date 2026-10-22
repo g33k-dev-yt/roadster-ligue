@@ -1,0 +1,18 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "main-window",
+  "description": "Local game window. No filesystem, shell, network-client or updater privileges. External asset-credit links use the OS browser and an explicit HTTPS-domain allowlist.",
+  "windows": ["main"],
+  "permissions": [
+    "core:default",
+    {
+      "identifier": "opener:allow-open-url",
+      "allow": [
+        {"url": "https://sketchfab.com/*"},
+        {"url": "https://creativecommons.org/*"},
+        {"url": "https://polyhaven.com/*"},
+        {"url": "https://github.com/ProgrammerWUnrealu/roadster-ligue*"}
+      ]
+    }
+  ]
+}

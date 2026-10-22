@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#101613" />
+  <meta name="description" content="Roadster Ligue — By-G33K. Satyryczna piłka samochodowa: Tesla Roadster 2026, rakietowy dopalacz i lokalni rywale AI. Przeglądarka i Tauri." />
+  <title>Roadster Ligue — By-G33K</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preload" href="/assets/barlow-heavy.ttf" as="font" type="font/ttf" crossorigin />
+  <link rel="preload" href="/assets/manrope-regular.ttf" as="font" type="font/ttf" crossorigin />
+</head>
+<body class="preflight" data-phase="safety">
+  <svg class="svg-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></symbol>
+    <symbol id="i-volume" viewBox="0 0 24 24"><path d="m11 5-6 4H2v6h3l6 4zM15 8a6 6 0 0 1 0 8M18 5a10 10 0 0 1 0 14"/></symbol>
+    <symbol id="i-muted" viewBox="0 0 24 24"><path d="m11 5-6 4H2v6h3l6 4zM16 9l6 6m0-6-6 6"/></symbol>
+    <symbol id="i-settings" viewBox="0 0 24 24"><path d="M12 8v8M5 4v16M19 4v16M2 9h6m1 6h6m1-7h6"/></symbol>
+    <symbol id="i-max" viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7z"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="m13 2-9 12h7l-1 8 10-12h-7z"/></symbol>
+    <symbol id="i-ball" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m12 8 4 3-1.5 4h-5L8 11zm0-5v5m8 3 4.5-1.5M14.5 15l3 4m-8-4-3 4M8 11 3.5 9.5"/></symbol>
+    <symbol id="i-key" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="M6 9h.01M10 9h.01M14 9h.01M18 9h.01M6 13h.01M10 13h.01M14 13h.01M18 13h.01M8 16h8"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6zM8 12l3 3 5-6"/></symbol>
+    <symbol id="i-rotate" viewBox="0 0 24 24"><path d="M3 10a9 9 0 1 1 1 8M3 4v6h6"/></symbol>
+    <symbol id="i-gamepad" viewBox="0 0 24 24"><path d="M7 6h10a4 4 0 0 1 4 3l1 7a3 3 0 0 1-5 3l-3-3h-4l-3 3a3 3 0 0 1-5-3l1-7a4 4 0 0 1 4-3ZM5 11h6M8 8v6M16 10h.01M19 13h.01"/></symbol>
+    <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M8 3h8v6a4 4 0 0 1-8 0zM8 5H4v3a4 4 0 0 0 5 4m7-7h4v3a4 4 0 0 1-5 4M12 13v6m-5 2h10m-8-2h6"/></symbol>
+  </defs></svg>
+  <main id="app">
+    <div id="viewport" aria-label="Trójwymiarowa arena Roadster Ligue"></div>
+    <section id="safety-screen" class="safety-screen" aria-labelledby="safety-title" tabindex="-1">
+      <header class="safety-top"><div class="safety-wordmark">ROADSTER <span>LIGUE</span></div><span class="creator-tag">By-G33K</span></header>
+      <div class="safety-content">
+        <div class="safety-kicker"><svg aria-hidden="true"><use href="#i-shield"/></svg> ZANIM WŁĄCZYSZ DOPALACZ / BEFORE YOU PLAY</div>
+        <h1 id="safety-title">NAJPIERW <span>BEZPIECZEŃSTWO.</span></h1>
+        <div class="safety-notices">
+          <article><span class="safety-number">01</span><h2>UWAGA: FOTOWRAŻLIWOŚĆ I NAPADY PADACZKOWE</h2><p>Gra zawiera <strong>migające światła, kontrastowe wzory i szybki ruch kamery</strong>. Mogą one wywołać napad padaczkowy, także u osób bez wcześniejszych napadów.</p><p>Jeśli masz padaczkę lub historię nadwrażliwości na światło, skonsultuj się z lekarzem przed grą. Graj w oświetlonym pomieszczeniu, zachowaj dystans od ekranu i rób przerwy. Przy zawrotach głowy, zaburzeniach widzenia lub drgawkach <strong>natychmiast przerwij grę i zasięgnij porady medycznej</strong>.</p><p class="english-note" lang="en"><strong>Photosensitivity warning:</strong> flashing lights and rapid motion may trigger seizures. Stop playing if you feel unwell. Reduced effects do not remove all risk.</p></article>
+          <article><span class="safety-number">02</span><h2>TO JEST SATYRA. NIE TEST DROGOWY.</h2><p><strong>Roadster Ligue — By-G33K to niezależna, satyryczna gra fanowska.</strong> Rakietowe osiągi są fikcją, nie reklamą ani symulacją prawdziwych samochodów.</p><p>Brak powiązań z Tesla, Psyonix i Epic Games. Znaki towarowe należą do ich właścicieli. Model Roadstera jest interpretacją społecznościową, nie oficjalnym CAD producenta.</p><p class="english-note" lang="en">This game is satire. It is not an official Tesla product and is not affiliated with Tesla, Psyonix or Epic Games.</p></article>
+        </div>
+        <label class="safety-reduced"><input id="safety-reduced" type="checkbox" checked/><span><b>OGRANICZONE EFEKTY — ZALECANE</b><small>Wyłącza cząsteczki, drgania kamery, animacje menu i zoom dopalacza. Nie eliminuje ryzyka napadu.</small></span></label>
+        <div class="safety-actions"><button id="safety-continue" class="primary-button"><span>ROZUMIEM · PRZEJDŹ DO MENU</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></button><button id="safety-exit" class="text-button">NIE TERAZ</button></div>
+        <p id="safety-status" class="safety-status hidden" role="status"></p>
+      </div>
+      <footer class="safety-bottom"><span>ROADSTER LIGUE / v1.1.0</span><span>Grafika 3D i dźwięk jeszcze nie zostały uruchomione.</span></footer>
+    </section>
+
+    <section id="opening-menu" class="screen opening-screen hidden" aria-label="Roadster Ligue — menu startowe">
+      <div class="opening-coordinate" aria-hidden="true">2026</div>
+      <header class="opening-header"><div class="brand" aria-label="Roadster Ligue"><span class="brand-mark">R<i></i></span><span class="brand-name">ROADSTER<span>LIGUE</span></span></div><div class="opening-header-right"><span class="runtime-badge"><i></i><span id="runtime-label">BROWSER · WEBGL</span></span><span class="creator-tag">By-G33K</span></div></header>
+      <div class="opening-main">
+        <div class="opening-kicker"><span>SEZON 00</span> NIEZALEŻNY PROJEKT SATYRYCZNY</div>
+        <h1>PEŁNY GAZ.<br><span>ZERO POWAGI.</span></h1>
+        <p class="opening-description">Piłka. Rakiety. Roadstery z 2026.<br>Całe boisko Twoje. Nawet jego ściany.</p>
+        <div class="opening-actions">
+          <button id="intro-play" class="primary-button" disabled><span>GRAJ <small>USTAW MECZ · 1v1 / 2v2 / 3v3</small></span><svg aria-hidden="true"><use href="#i-arrow-up"/></svg></button>
+          <button id="intro-training" class="opening-secondary" disabled><span>SWOBODNY TRENING</span><svg aria-hidden="true"><use href="#i-ball"/></svg></button>
+          <button id="intro-garage" class="opening-secondary" disabled><span>TWÓJ GARAŻ</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+        </div>
+        <div class="opening-links"><button id="intro-settings"><svg aria-hidden="true"><use href="#i-settings"/></svg> USTAWIENIA</button><button id="intro-controls"><svg aria-hidden="true"><use href="#i-key"/></svg> STEROWANIE</button><button id="intro-credits">ASSETY & LICENCJE <svg aria-hidden="true"><use href="#i-arrow-up"/></svg></button></div>
+      </div>
+      <aside class="opening-spec"><span>JEDEN MODEL. CAŁA LIGA.</span><h2>TESLA ROADSTER <b>2026</b></h2><p>ALL ELECTRIC. ALL IN.</p></aside>
+      <footer class="opening-footer"><span><i></i> LOKALNIE Z AI <span> / </span> BROWSER + TAURI</span><button id="intro-safety">BEZPIECZEŃSTWO & SATYRA ↗</button><p>Satyryczna gra fanowska <b class="creator-inline">By-G33K</b>.<br>Bez powiązań z Tesla, Psyonix ani Epic Games.</p></footer>
+    </section>
+
+    <div id="loading" class="loading-screen hidden">
+      <div class="loading-mark">R<span>L</span><i></i></div>
+      <span class="eyebrow">ROADSTER LIGUE</span>
+      <p>ŁADUJEMY WYSOKIE NAPIĘCIE<span class="loading-dots">...</span></p>
+      <div class="loading-track"><i id="loading-progress"></i></div>
+      <small id="loading-status">Przygotowywanie areny</small>
+    </div>
+
+    <section id="lobby" class="screen lobby-screen hidden">
+      <div class="lobby-shade"></div>
+      <div class="huge-year" aria-hidden="true">2026</div>
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="Roadster Ligue — strona główna" id="brand-home">
+          <span class="brand-mark">R<i></i></span>
+          <span class="brand-name">ROADSTER<span>LIGUE</span></span>
+        </a>
+        <nav class="main-nav" aria-label="Menu główne">
+          <button class="nav-link active" data-page="play">GRAJ<span>01</span></button>
+          <button class="nav-link" data-page="garage">GARAŻ<span>02</span></button>
+          <button class="nav-link" data-page="training">TRENING<span>03</span></button>
+        </nav>
+        <div class="top-actions">
+          <span class="local-badge"><i></i> GOTOWY DO GRY</span>
+          <button class="icon-button sound-button" title="Dźwięk" aria-label="Włącz lub wyłącz dźwięk"><svg><use href="#i-volume"/></svg></button>
+          <button class="icon-button" id="settings-button" title="Ustawienia" aria-label="Ustawienia"><svg><use href="#i-settings"/></svg></button>
+          <button class="outline-button controls-button"><svg><use href="#i-key"/></svg><span>STEROWANIE</span></button>
+        </div>
+      </header>
+
+      <div id="play-panel" class="hero-content">
+        <div class="season-label"><span>SEZON 00</span><i></i> PIŁKA POD NAPIĘCIEM</div>
+        <h1>CAŁA MOC.<br>ZERO <span>GRANIC.</span></h1>
+        <p class="hero-description">Tesla Roadster 2026. Rakietowy dopalacz.<br>Boisko to dopiero początek.</p>
+        <div class="mode-selector">
+          <div class="field-label">TWÓJ MECZ <span>LOKALNIE Z AI</span></div>
+          <div class="mode-options" role="group" aria-label="Liczba graczy w drużynie">
+            <button class="mode-option" data-size="1"><b>1<span>v</span>1</b><small>POJEDYNEK</small></button>
+            <button class="mode-option selected" data-size="2"><b>2<span>v</span>2</b><small>DEBEL</small><svg><use href="#i-check"/></svg></button>
+            <button class="mode-option" data-size="3"><b>3<span>v</span>3</b><small>STANDARD</small></button>
+          </div>
+          <div class="match-options"><span><i class="status-dot"></i> NEON PARK</span><span>3 MIN</span><label>AI <select id="difficulty" aria-label="Poziom trudności AI"><option value="rookie">DEBIUTANT</option><option value="pro" selected>PRO</option><option value="allstar">ALL-STAR</option></select></label></div>
+        </div>
+        <button id="play-button" class="primary-button"><span>WJEDŹ NA BOISKO</span><svg><use href="#i-arrow-up"/></svg></button>
+        <button id="freeplay-button" class="text-button">Wolisz poćwiczyć? <span>Swobodny trening <svg><use href="#i-arrow"/></svg></span></button>
+      </div>
+
+      <div id="garage-panel" class="hero-content garage-panel hidden">
+        <div class="season-label"><span>TWÓJ GARAŻ</span><i></i> JEDEN MODEL. TWÓJ STYL.</div>
+        <h1>GOTOWY<br>NA <span>WIĘCEJ.</span></h1>
+        <p class="hero-description">Tesla Roadster 2026 / Rocket spec<br>Ten sam charakter. Twój kolor.</p>
+        <div class="garage-label">01 / LAKIER <span id="paint-name">ARCTIC WHITE</span></div>
+        <div class="paint-swatches" role="group" aria-label="Kolor nadwozia">
+          <button class="paint-swatch selected" data-color="#dce3de" data-name="ARCTIC WHITE" style="--swatch:#dce3de" aria-label="Arctic White"></button>
+          <button class="paint-swatch" data-color="#baff36" data-name="VOLT LIME" style="--swatch:#baff36" aria-label="Volt Lime"></button>
+          <button class="paint-swatch" data-color="#3cc7ff" data-name="ION BLUE" style="--swatch:#3cc7ff" aria-label="Ion Blue"></button>
+          <button class="paint-swatch" data-color="#ff6840" data-name="SOLAR RED" style="--swatch:#ff6840" aria-label="Solar Red"></button>
+          <button class="paint-swatch" data-color="#333e47" data-name="DEEP GRAPHITE" style="--swatch:#333e47" aria-label="Deep Graphite"></button>
+        </div>
+        <div class="garage-label">02 / WYKOŃCZENIE</div>
+        <div class="finish-options"><button data-finish="gloss" class="selected">POŁYSK</button><button data-finish="satin">SATYNA</button><button data-finish="matte">MAT</button></div>
+        <button id="save-garage" class="primary-button"><span>ZAPISZ I GRAJ</span><svg><use href="#i-check"/></svg></button>
+        <p class="garage-hint"><svg><use href="#i-rotate"/></svg> Przeciągnij samochód, aby go obrócić</p>
+      </div>
+
+      <div class="vehicle-label"><span class="vehicle-line"></span><div><span class="eyebrow">TWÓJ ZAWODNIK / 001</span><h2>TESLA ROADSTER <b>2026</b></h2><p><i></i> ROCKET SPEC <span>NAPĘD: ADRENALINA</span></p></div><button id="customize-button" aria-label="Dostosuj samochód"><svg><use href="#i-arrow-up"/></svg></button></div>
+      <div class="hero-features"><span><svg><use href="#i-bolt"/></svg> RAKIETOWY DOPALACZ</span><i></i><span><svg><use href="#i-rotate"/></svg> KONTROLA W POWIETRZU</span><i></i><span><svg><use href="#i-ball"/></svg> CZYSTA RYWALIZACJA</span></div>
+      <footer class="lobby-footer"><span class="build-label"><i></i> BROWSER + TAURI <b>v1.1</b> <strong class="creator-inline">By-G33K</strong></span><button id="lobby-opening" class="menu-home-button">← MENU STARTOWE</button><button id="credits-button">TWÓRCY & ASSETY <svg><use href="#i-arrow-up"/></svg></button></footer>
+    </section>
+
+    <section id="hud" class="screen hud-screen hidden" aria-label="Interfejs meczu">
+      <div class="hud-top-gradient"></div>
+      <div class="match-info"><span class="mini-brand">R<span>L</span><i></i></span><div><b>NEON PARK</b><span id="match-mode">MECZ TOWARZYSKI · 2v2</span></div></div>
+      <div id="score-bar" class="score-bar"><span class="team-name home">VOLT</span><span id="score-home" class="score home-score">0</span><div class="match-clock"><span id="clock">3:00</span><small id="period">CZAS MECZU</small></div><span id="score-away" class="score away-score">0</span><span class="team-name away">EMBER</span></div>
+      <div class="hud-actions"><button class="icon-button sound-button" aria-label="Dźwięk"><svg><use href="#i-volume"/></svg></button><button class="icon-button" id="fullscreen-button" aria-label="Pełny ekran"><svg><use href="#i-max"/></svg></button><button class="icon-button" id="pause-button" aria-label="Pauza"><svg><use href="#i-pause"/></svg></button></div>
+      <div id="countdown" class="countdown hidden"><span id="countdown-number">3</span><small>PRZYGOTUJ SIĘ</small></div>
+      <div id="goal-banner" class="goal-banner hidden"><span class="eyebrow" id="goal-team">DRUŻYNA VOLT</span><strong>GOOOL!</strong><p id="goal-scorer">TY ZDOBYWASZ BRAMKĘ</p><span class="goal-points">+100</span></div>
+      <div id="replay-tag" class="replay-tag hidden"><i></i> POWTÓRKA <span>SPACJA — POMIŃ</span></div>
+      <div id="notifications" class="notifications" aria-live="polite"></div>
+      <div id="chat-feed" class="chat-feed"></div>
+      <div id="nameplates"></div>
+      <div id="ball-arrow" class="ball-arrow hidden"><svg><use href="#i-ball"/></svg><span>PIŁKA</span></div>
+      <div class="camera-panel"><button id="camera-button"><span class="keycap">C</span><span>KAMERA NA PIŁKĘ <b id="camera-status">WŁ.</b></span><i class="status-dot"></i></button><p id="context-hint"><kbd>SPACJA</kbd> Skok / flip <span>·</span> <kbd>SHIFT</kbd> Drift <span>·</span> <kbd>R</kbd> Postaw auto</p><span id="supersonic" class="supersonic hidden">PRĘDKOŚĆ NADDŹWIĘKOWA</span></div>
+      <div class="telemetry"><div class="speed-readout"><span id="speed">000</span><small>KM/H</small><div class="jump-lights"><i id="jump-one" class="ready"></i><i id="jump-two" class="ready"></i><span>SKOKI</span></div></div><div class="boost-meter"><svg viewBox="0 0 150 150" class="boost-ring"><circle class="boost-track" cx="75" cy="75" r="62"/><circle id="boost-arc" class="boost-arc" cx="75" cy="75" r="62"/></svg><div class="boost-number"><svg><use href="#i-bolt"/></svg><b id="boost">100</b><span>DOPALACZ</span></div><small>LEWY PRZYCISK MYSZY</small></div></div>
+      <div class="scoreboard-hint"><kbd>TAB</kbd> TABELA <span>·</span> <kbd>ESC</kbd> PAUZA</div>
+      <canvas id="minimap" width="164" height="230" aria-label="Minimapa areny"></canvas>
+      <div id="touch-controls" class="touch-controls"><div id="touch-stick" class="touch-stick"><i></i></div><div class="touch-actions"><button id="touch-jump">SKOK</button><button id="touch-boost"><svg><use href="#i-bolt"/></svg></button></div></div>
+    </section>
+
+    <section id="pause-screen" class="overlay-screen hidden"><div class="pause-card"><span class="eyebrow">CHWILA NA ODDECH</span><h2>PAUZA.</h2><p>Boisko nigdzie nie ucieknie.</p><button id="resume-button" class="primary-button"><span>WRÓĆ DO MECZU</span><svg><use href="#i-play"/></svg></button><button class="outline-button controls-button">STEROWANIE</button><button id="restart-button" class="outline-button">ZAGRAJ OD NOWA</button><button id="quit-button" class="text-button">WYJDŹ DO MENU <svg><use href="#i-arrow"/></svg></button></div></section>
+    <section id="scoreboard" class="scoreboard-overlay hidden"><div class="scoreboard-card"><div class="scoreboard-title"><span class="eyebrow">ROADSTER LIGUE / NEON PARK</span><h2>TABELA MECZU</h2><span><kbd>TAB</kbd> ZAMKNIJ</span></div><div class="scoreboard-columns"><span>ZAWODNIK</span><span>PUNKTY</span><span>GOLE</span><span>ASYSTY</span><span>STRZAŁY</span><span>OBRONY</span></div><div id="scoreboard-rows"></div></div></section>
+    <section id="results" class="overlay-screen hidden"><div class="results-card"><svg class="trophy-icon"><use href="#i-trophy"/></svg><span class="eyebrow">KONIEC MECZU</span><h2 id="result-title">ZWYCIĘSTWO.</h2><div class="result-scores"><span>VOLT <b id="result-home">0</b></span><i>:</i><span><b id="result-away">0</b> EMBER</span></div><div id="result-stats" class="result-stats"></div><button id="rematch-button" class="primary-button"><span>JESZCZE JEDEN MECZ</span><svg><use href="#i-arrow-up"/></svg></button><button id="results-menu-button" class="text-button">WRÓĆ DO MENU</button></div></section>
+
+    <dialog id="controls-dialog" class="modal controls-modal"><button class="modal-close" data-close aria-label="Zamknij"><svg><use href="#i-close"/></svg></button><span class="eyebrow">ZNAJ SWÓJ SAMOCHÓD</span><h2>PEŁNA KONTROLA.</h2><p class="modal-intro">Łatwo zacząć. Jest co opanować.</p><div class="control-grid"><div><span><kbd>W</kbd><kbd>S</kbd><kbd>A</kbd><kbd>D</kbd></span><b>Gaz, hamulec, kierownica</b><small>Działają też strzałki.</small></div><div><span><kbd>SPACJA</kbd></span><b>Skok / podwójny skok</b><small>Drugi skok + kierunek = flip.</small></div><div><span><kbd>LPM</kbd><em>lub</em><kbd>F</kbd></span><b>Rakietowy dopalacz</b><small>Zbieraj małe i duże pady na boisku.</small></div><div><span><kbd>SHIFT</kbd></span><b>Drift / powerslide</b><small>Szybko zawróć i odzyskaj piłkę.</small></div><div><span><kbd>W</kbd><kbd>S</kbd><kbd>Q</kbd><kbd>E</kbd></span><b>Kontrola w powietrzu</b><small>W/S: pochylenie, Q/E: obrót osiowy.</small></div><div><span><kbd>C</kbd><kbd>R</kbd><kbd>ESC</kbd></span><b>Kamera, postaw auto, pauza</b><small>W treningu B ustawia piłkę na środku.</small></div></div><div class="mechanics-note"><svg><use href="#i-bolt"/></svg><p><b>Wykorzystaj całą arenę.</b> Jedź po rampach i ścianach. Przy prędkości naddźwiękowej możesz zdemolować przeciwnika. Remis? Gramy dogrywkę do złotego gola.</p></div><div class="controller-note"><svg><use href="#i-gamepad"/></svg><span>PAD: RT gaz · LT hamulec · A skok · B dopalacz · X drift · Y kamera · LB/RB obrót</span></div><button class="primary-button" data-close><span>WIEM. JEDZIEMY.</span><svg><use href="#i-arrow"/></svg></button></dialog>
+
+    <dialog id="settings-dialog" class="modal settings-modal"><button class="modal-close" data-close aria-label="Zamknij"><svg><use href="#i-close"/></svg></button><span class="eyebrow">DOSTRÓJ SWOJĄ GRĘ</span><h2>USTAWIENIA.</h2><label class="setting-row"><span>Głośność efektów</span><input id="volume-setting" type="range" min="0" max="100" value="40"/><b id="volume-value">40%</b></label><label class="setting-row"><span>Jakość obrazu</span><select id="quality-setting"><option value="low">WYDAJNOŚĆ</option><option value="high" selected>WYSOKA</option></select></label><label class="setting-row"><span>Ograniczone efekty</span><input id="reduced-setting" type="checkbox" checked/></label><label class="setting-row"><span>Drgania kamery</span><input id="shake-setting" type="checkbox" checked/></label><label class="setting-row"><span>Podpowiedzi sterowania</span><input id="hints-setting" type="checkbox" checked/></label><p class="settings-note">Ograniczone efekty wyłączają cząsteczki, drgania i zoom dopalacza, ale nie eliminują ryzyka napadu padaczkowego.<br><br>Mecze są lokalne: Ty i zawodnicy AI. Pad, klawiatura i sterowanie dotykowe są obsługiwane. Brak sieciowego multiplayera w tym prototypie.</p><button class="primary-button" data-close><span>GOTOWE</span><svg><use href="#i-check"/></svg></button></dialog>
+
+    <dialog id="credits-dialog" class="modal credits-modal"><button class="modal-close" data-close aria-label="Zamknij"><svg><use href="#i-close"/></svg></button><span class="eyebrow">Z INTERNETU. NA BOISKO.</span><h2>TWÓRCY & ASSETY.</h2><div class="credit-item"><b class="creator-tag">By-G33K</b><p>Roadster Ligue · niezależny, satyryczny projekt fanowski.</p><a href="https://github.com/ProgrammerWUnrealu/roadster-ligue" target="_blank" rel="noopener">Kod źródłowy / GitHub ↗</a></div><div class="credit-item"><b>Tesla Roadtser 2026</b><p>Model społecznościowy autorstwa <a href="https://sketchfab.com/asiphy007" target="_blank" rel="noopener">asiphy007</a> · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a></p><a href="https://sketchfab.com/3d-models/tesla-roadtser-2026-7630c9fe842d4f5ea86fc1f122753b89" target="_blank" rel="noopener">Źródło modelu ↗</a><small>Model wygenerowany z pomocą AI. Uproszczony, skompresowany, przeskalowany i przystosowany do oświetlenia i kolorów drużyn. Wizualna interpretacja, nie oficjalny CAD Tesli.</small></div><div class="credit-item"><b>Oświetlenie: Venice Sunset</b><p>Greg Zaal / <a href="https://polyhaven.com/a/venice_sunset" target="_blank" rel="noopener">Poly Haven</a> · CC0</p></div><div class="credit-item"><b>Silnik & typografia</b><p>Three.js (MIT) · cannon-es (MIT)<br>Barlow Condensed — Jeremy Tribby · Manrope — Mikhail Sharanda (SIL OFL)</p></div><p class="settings-note">Niezależny, satyryczny prototyp fanowski. To jest satyra, nie reklama ani symulacja prawdziwych samochodów. Bez powiązań z Tesla, Psyonix ani Epic Games. Roadster Ligue ma własną arenę, grafikę interfejsu i kod rozgrywki. Nie jest kopią całej gry Rocket League.</p></dialog>
+    <dialog id="safety-dialog" class="modal safety-modal"><button class="modal-close" data-close aria-label="Zamknij"><svg><use href="#i-close"/></svg></button><span class="eyebrow">ROADSTER LIGUE / By-G33K</span><h2>BEZPIECZEŃSTWO<br>& SATYRA.</h2><h3>FOTOWRAŻLIWOŚĆ / PHOTOSENSITIVITY</h3><p>Migające światła, kontrastowe wzory i szybki ruch kamery mogą wywołać napad padaczkowy, także bez wcześniejszej historii napadów. Jeśli masz padaczkę lub historię nadwrażliwości na światło, skonsultuj się z lekarzem przed grą. Przy zawrotach głowy, zaburzeniach widzenia, drgawkach lub innych nietypowych objawach natychmiast przerwij grę i zasięgnij porady medycznej.</p><p>Graj w oświetlonym pomieszczeniu i rób przerwy. Tryb ograniczonych efektów nie usuwa całego ryzyka. Ustawienia efektów zmienisz w menu USTAWIENIA.</p><h3>TO JEST SATYRA / THIS GAME IS SATIRE</h3><p>Roadster Ligue — By-G33K to niezależna, satyryczna gra fanowska. Rakietowe osiągi są fikcją, nie reklamą ani realistyczną symulacją samochodu. Brak powiązań z Tesla, Psyonix ani Epic Games. Znaki towarowe należą do ich właścicieli.</p><button class="primary-button" data-close><span>ROZUMIEM</span><svg><use href="#i-check"/></svg></button></dialog>
+    <div id="toast" class="toast hidden"></div>
+    <div class="persistent-credit">Model: <a href="https://sketchfab.com/3d-models/tesla-roadtser-2026-7630c9fe842d4f5ea86fc1f122753b89" target="_blank" rel="noopener">“Tesla Roadtser 2026” · asiphy007</a> · CC BY 4.0</div>
+  </main>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

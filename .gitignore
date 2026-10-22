@@ -1,0 +1,15 @@
+node_modules/
+dist/
+qa/
+roadster-2026-source.glb
+Roadster-Ligue.html
+.DS_Store
+
+# Native builds, generated schemas and local credentials
+src-tauri/target/
+src-tauri/gen/
+.cache/
+.env
+.env.*
+*.pem
+*.key

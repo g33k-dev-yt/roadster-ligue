@@ -1,0 +1,26 @@
+[package]
+name = "roadster-ligue"
+version = "1.1.0"
+description = "Roadster Ligue — By-G33K. Satirical local-AI roadster football."
+authors = ["By-G33K"]
+license = "MIT"
+edition = "2021"
+rust-version = "1.90"
+
+[lib]
+name = "roadster_ligue_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-opener = "2"
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = "s"
+strip = true
+panic = "abort"

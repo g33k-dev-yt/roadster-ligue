@@ -1,6 +1,6 @@
 # Roadster Ligue — release checks
 
-Date: 22 October 2026. Build: v1.1.0.
+Date: 22 October 2026. Build: v1.1.1.
 
 ## Automated checks: PASS
 
@@ -52,3 +52,7 @@ The production build was served only under `/roadster-ligue/`, with no host-root
 ## Limits of testing
 
 Windows/macOS desktop binaries, physical gamepad hardware, real phone touch screens and every browser / GPU combination have not been individually verified. Touch and standard Gamepad API input paths are implemented; permissions can be restricted by an embedding page. Arcade physics is not claimed to match Rocket League exactly. Networked multiplayer is not implemented.
+
+## Packaging command correction
+
+v1.1.1 forwards the Cargo lock flag using `npm run tauri -- build -- --locked`. Passing `--locked` directly to `tauri build` is not supported by the pinned CLI. The original workflow exposed this during the installer check; documentation and workflow invocation have been corrected.

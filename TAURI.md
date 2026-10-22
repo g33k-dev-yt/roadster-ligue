@@ -1,6 +1,6 @@
 # Roadster Ligue — Tauri 2 desktop
 
-The same frontend runs in a browser, at a static-hosting repository subpath, or inside Tauri. Desktop branding is **Roadster Ligue — By-G33K**, version **1.1.0**, app identifier `io.g33k.roadster-ligue`.
+The same frontend runs in a browser, at a static-hosting repository subpath, or inside Tauri. Desktop branding is **Roadster Ligue — By-G33K**, version **1.1.1**, app identifier `io.g33k.roadster-ligue`.
 
 ## Prerequisites
 
@@ -31,8 +31,10 @@ Tauri starts Vite and opens its native window. The warning appears before WebGL 
 ## Production build
 
 ```bash
-npm run desktop:build -- --locked
+npm run tauri -- build -- --locked
 ```
+
+For a regular local build, `npm run desktop:build` also works. In the locked command above, the second separator passes `--locked` to Cargo rather than to the Tauri CLI.
 
 Output: `src-tauri/target/release/bundle/`.
 
@@ -43,9 +45,9 @@ Output: `src-tauri/target/release/bundle/`.
 Examples:
 
 ```bash
-npm run desktop:build -- --locked --bundles deb,appimage
-npm run desktop:build -- --locked --bundles nsis
-npm run desktop:build -- --locked --bundles dmg
+npm run tauri -- build --bundles deb,appimage -- --locked
+npm run tauri -- build --bundles nsis -- --locked
+npm run tauri -- build --bundles dmg -- --locked
 ```
 
 These are **unsigned development builds**. They are not notarized, and Windows SmartScreen or macOS Gatekeeper may warn or block distribution. Production signing/notarization requires the developer's own certificates/accounts; no signing credentials are included. There is no auto-updater or telemetry.

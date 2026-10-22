@@ -1,6 +1,6 @@
 [package]
 name = "roadster-ligue"
-version = "1.1.0"
+version = "1.1.1"
 description = "Roadster Ligue — By-G33K. Satirical local-AI roadster football."
 authors = ["By-G33K"]
 license = "MIT"

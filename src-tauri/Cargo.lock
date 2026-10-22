@@ -2779,7 +2779,7 @@ dependencies = [
 
 [[package]]
 name = "roadster-ligue"
-version = "1.1.0"
+version = "1.1.1"
 dependencies = [
  "tauri",
  "tauri-build",

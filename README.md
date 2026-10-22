@@ -8,7 +8,7 @@
 
 > **Photosensitivity warning:** flashing lights, high-contrast patterns and rapid camera movement can trigger seizures. A static warning requires acknowledgement before 3D graphics or audio start on every launch. Reduced effects are recommended, but do not eliminate risk. **This game is satire**, not a Tesla product or a realistic vehicle simulation. No affiliation with Tesla, Psyonix or Epic Games. See [SAFETY.md](SAFETY.md).
 
-New in **v1.1.0**: By-G33K opening menu, initial photosensitivity and satire notices, reduced-effects controls, relative-URL browser hosting, a real Tauri 2 Rust app, native icons, least-privilege external credit links and CI workflows for Pages and desktop installers.
+New in **v1.1**: By-G33K opening menu, initial photosensitivity and satire notices, reduced-effects controls, relative-URL browser hosting, a real Tauri 2 Rust app, native icons, least-privilege external credit links and CI workflows for Pages and desktop installers.
 
 Grywalna, trójwymiarowa piłka samochodowa w przeglądarce. Wszystkie auta korzystają ze społecznościowego modelu **Tesli Roadster 2026**. Własny interfejs, arena Neon Park i rakietowe efekty.
 
@@ -96,10 +96,10 @@ Real Tauri 2 sources, Cargo lockfile, platform bundle configuration, app icons, 
 ```bash
 npm ci
 npm run desktop:dev
-npm run desktop:build -- --locked
+npm run tauri -- build -- --locked
 ```
 
-Native output is in `src-tauri/target/release/bundle/`. The manual **Tauri desktop installers** GitHub Actions workflow can build Linux, Windows and macOS on native runners. Builds are unsigned development artifacts, not notarized production releases. See [TAURI.md](TAURI.md) for installer targets, signing caveats and exact prerequisites.
+For a regular local build, `npm run desktop:build` also works. The explicit locked command above forwards the lock flag to Cargo. Native output is in `src-tauri/target/release/bundle/`. The manual **Tauri desktop installers** GitHub Actions workflow can build Linux, Windows and macOS on native runners. Builds are unsigned development artifacts, not notarized production releases. See [TAURI.md](TAURI.md) for installer targets, signing caveats and exact prerequisites.
 
 ### Struktura
 

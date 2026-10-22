@@ -71,3 +71,7 @@ WebGL 2 and audio availability depend on the platform's WebView2/WKWebView/WebKi
 ## Dependency notices
 
 `NATIVE_DEPENDENCY_NOTICES.txt` is bundled with installers and records exact source-package URLs, declared licenses and the notices supplied by locked Rust crates (including optional/build-only/platform-specific packages). If Cargo.lock changes, regenerate with `python3 tools/native-notices.py`. This collector is not a legal audit; system libraries retain their own licenses.
+
+## Verified release
+
+v1.1.1 produced Linux .deb and AppImage installers in the native CI job. The packaged .deb executable was launched and basic play was checked under Debian/WebKitGTK. Windows and macOS configurations are prepared but were not run. See [TEST_RESULTS.md](TEST_RESULTS.md) for exact evidence and limitations.
